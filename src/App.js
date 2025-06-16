@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import Navigator from "./views/navigator";
+import Home from "./views/home";
+import "@radix-ui/themes/styles.css";
+import { Box, Container } from "@radix-ui/themes"; 
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="relative">
+      {/* navigator in every page */}
+      <Box className="fixed top-0 w-full z-10 m-0 p-0" style={{height:"40px"}}>
+        <Container>
+          <Navigator />
+        </Container>
+      </Box>
+      {/* home */}
+      <Box className="pt-10 "> 
+        <Container>
+            <Home />
+        </Container>
+      </Box>
     </div>
   );
 }
 
 export default App;
+
+// The Theme component is a wrapper component that sets the theme for the entire app. 
+// We can add any custom styles or components here.
