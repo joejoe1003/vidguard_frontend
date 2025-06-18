@@ -1,26 +1,40 @@
-import React, {useState} from "react";
-import Navigator from "./views/navigator";
-import Home from "./views/home";
+import React, { Component } from 'react';
 import "@radix-ui/themes/styles.css";
+import ReactDOM from 'react-dom/client';
+import '../src/App.css'
+import {
+  BrowserRouter ,
+  Routes,
+  Route,
+  Link
+} from 'react-router-dom';
 import { Box, Container } from "@radix-ui/themes"; 
 
-function App() {
+import Home from "./views/home";
+import Vote from "./views/vote";
+import Navigator from './views/navigator';
 
+
+function App() {
   return (
-    <div className="relative">
-      {/* navigator in every page */}
-      <Box className="fixed top-0 w-full z-10 m-0 p-0" style={{height:"40px"}}>
-        <Container>
-          <Navigator />
-        </Container>
-      </Box>
-      {/* home */}
-      <Box className="pt-10 "> 
-        <Container>
-            <Home />
-        </Container>
-      </Box>
-    </div>
+      <div>
+        <Box className="fixed top-0 w-full z-10 m-0 p-0" style={{height:"40px"}}>
+          <Container>
+            <Navigator />
+          </Container>
+        </Box>
+
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/vote" element={<Vote />} />
+          </Routes>
+        </BrowserRouter>
+
+      </div>
+    
+      
   );
 }
 

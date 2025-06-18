@@ -1,6 +1,9 @@
 import React from "react";
-import { Button, Theme, Flex, Box, TabNav, Heading, Grid } from '@radix-ui/themes';
+import { Button, Theme, Flex, Box, TabNav, Heading } from '@radix-ui/themes';
+import { Link  } from '@radix-ui/themes';
+import "@radix-ui/themes/styles.css";
 import './index.css'
+import './../vote'
 
 
 export default function Navigator() {
@@ -40,10 +43,12 @@ export default function Navigator() {
         {/* Menu */}
         <Flex direction="column" gap="4" pb="2">
           <TabNav.Root size="2">
-            <TabNav.Link href="#" active> Home </TabNav.Link>
-            <TabNav.Link href="#">Compare & Vote</TabNav.Link>
-            <TabNav.Link href="#">Reports & Analytics</TabNav.Link>
-            <TabNav.Link href="#">Block Search</TabNav.Link>
+            <TabNav.Link asChild active>
+              <Link href="/home">Home</Link>  
+            </TabNav.Link>
+            <TabNav.Link href="/vote">Compare & Vote</TabNav.Link>
+            <TabNav.Link href="/">Reports & Analytics</TabNav.Link>
+            <TabNav.Link href="/">Block Search</TabNav.Link>
           </TabNav.Root>
         </Flex>
       
