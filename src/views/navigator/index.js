@@ -7,6 +7,7 @@ import './../vote'
 
 
 export default function Navigator() {
+  const path = window.location.pathname;
   return (
     <Theme>
       <Flex gap="4" className="items-center w-full">
@@ -43,10 +44,10 @@ export default function Navigator() {
         {/* Menu */}
         <Flex direction="column" gap="4" pb="2">
           <TabNav.Root size="2">
-            <TabNav.Link asChild active>
+            <TabNav.Link asChild active={path === '/home' || path === '/'}>
               <Link href="/home">Home</Link>  
             </TabNav.Link>
-            <TabNav.Link href="/vote">Compare & Vote</TabNav.Link>
+            <TabNav.Link href="/vote" active={path === '/vote' }>Compare & Vote</TabNav.Link>
             <TabNav.Link href="/">Reports & Analytics</TabNav.Link>
             <TabNav.Link href="/">Block Search</TabNav.Link>
           </TabNav.Root>
