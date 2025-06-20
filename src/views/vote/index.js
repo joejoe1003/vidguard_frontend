@@ -2,7 +2,9 @@ import React, {useState} from "react";
 import { Button, Theme, Flex, Box, Section, Heading, Grid, Container } from '@radix-ui/themes';
 import Navigator from '../navigator/index.js'
 import "@radix-ui/themes/styles.css";
-import './index.css'
+import './index.css';
+import Comment from '../comment/comment.tsx';
+import 'react-comments-section/dist/index.css';
 import video_1 from '../../video/1-1.mp4';
 import video_2 from '../../video/1-2.mp4';
 
@@ -44,6 +46,8 @@ export default function Vote() {
     const infringingPercentage = totalVotes > 0 ? (infringingVotes / totalVotes) * 100 : 0;
     const notInfringingPercentage = totalVotes > 0 ? (notInfringingVotes / totalVotes) * 100 : 0;
 
+
+    // comment
 
 
     return (
@@ -143,6 +147,10 @@ export default function Vote() {
                         </div>
                     )}
                 </Box>
+            </Box>
+
+            <Box>
+               <Comment/>
             </Box>
         </Theme>
     );
