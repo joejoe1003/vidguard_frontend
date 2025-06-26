@@ -4,6 +4,8 @@ import { Link  } from '@radix-ui/themes';
 import "@radix-ui/themes/styles.css";
 import './index.css'
 import './../vote'
+import './../report'
+import '../blocksearch'
 
 
 export default function Navigator() {
@@ -48,8 +50,8 @@ export default function Navigator() {
               <Link href="/home">Home</Link>  
             </TabNav.Link>
             <TabNav.Link href="/vote" active={path === '/vote' }>Compare & Vote</TabNav.Link>
-            <TabNav.Link href="/">Reports & Analytics</TabNav.Link>
-            <TabNav.Link href="/">Block Search</TabNav.Link>
+            <TabNav.Link href="/report" active={path === '/report' }>Reports & Analytics</TabNav.Link>
+            <TabNav.Link href="/blocksearch" active={path === '/blocksearch' }>Block Search</TabNav.Link>
           </TabNav.Root>
         </Flex>
       

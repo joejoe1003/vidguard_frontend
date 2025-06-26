@@ -3,6 +3,7 @@ import { Button, Theme, Flex, Box, Section, Heading, Grid, Container } from '@ra
 import Navigator from '../navigator/index.js'
 import "@radix-ui/themes/styles.css";
 import './index.css';
+
 import Comment from '../comment/comment.tsx';
 import 'react-comments-section/dist/index.css';
 import video_1 from '../../video/1-1.mp4';
@@ -151,6 +152,7 @@ export default function Vote() {
 
             <Box>
                <Comment/>
+               <br/><br/>
             </Box>
         </Theme>
     );

@@ -13,6 +13,8 @@ import { Box, Container } from "@radix-ui/themes";
 import Home from "./views/home";
 import Vote from "./views/vote";
 import Navigator from './views/navigator';
+import Report from './views/report';
+import BlockSearch from './views/blocksearch';
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/vote" element={<Vote />} />
+            <Route path="/report" element={<Report />} />
+            <Route path="/block_search" element={<BlockSearch />} />
           </Routes>
         </BrowserRouter>
 

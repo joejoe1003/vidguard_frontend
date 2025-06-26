@@ -47,7 +47,11 @@ export default function Comment() {
 
   return (
     <div style={{ 
-        width: '100%' 
+        position: 'relative',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        alignSelf: 'center' ,
+        width: '1300px'
       }}>
       <CommentSection
         currentUser={{
@@ -77,7 +81,8 @@ export default function Comment() {
         currentData={(data: any) => {
           console.log('current data', data)
         }}
-        submitBtnStyle={{ border: '1px solid #1d4098', backgroundColor: '#1d4098' }}
+        submitBtnStyle={{ border: '1px solid #1E88E5', backgroundColor: '#1E88E5' }}
+        formStyle={{ backgroundColor: 'white' }}
       />
     </div>
   )
