@@ -154,6 +154,8 @@ export default function Vote() {
                <Comment/>
                <br/><br/>
             </Box>
+
+            
         </Theme>
     );
 }

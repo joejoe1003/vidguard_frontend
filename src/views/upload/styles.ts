@@ -45,6 +45,8 @@ const styles: Record<string, CSSProperties> = {
     display: "flex",
     flexDirection: "column",
     gap: "1em",
+    maxHeight: '200px', 
+    overflowY: 'auto'
   },
   fileElement: {
     display: "flex",
@@ -99,10 +101,10 @@ const styles: Record<string, CSSProperties> = {
     alignItems: "flex-end",
   },
   uploadButton: {
-    backgroundColor: "#3960bb",
-    color: "white",
+    backgroundColor: "#F9FAFB",
+    color: "Black",
     borderRadius: "4px",
-    border: "none",
+    border: "grey solid 1px",
     padding: "0.5em",
     cursor: "pointer",
     marginTop: "1em",
@@ -130,7 +132,7 @@ const styles: Record<string, CSSProperties> = {
     position: "relative",
   },
   uploadingBar: {
-    backgroundColor: "#0450d5",
+    backgroundColor: "#bed2fc",
     height: "24px",
     position: "absolute",
     width: "100%",
