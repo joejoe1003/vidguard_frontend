@@ -32,7 +32,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/vote" element={<Vote />} />
             <Route path="/report" element={<Report />} />
-            <Route path="/block_search" element={<BlockSearch />} />
+            <Route path="/blocksearch" element={<BlockSearch />} />
           </Routes>
         </BrowserRouter>
 
