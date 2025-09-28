@@ -1,3 +1,6 @@
+# A simple demo of a website
+<img width="2880" height="5206" alt="image" src="https://github.com/user-attachments/assets/0d600f29-f5a7-455d-b3fc-4a91170ef141" />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
