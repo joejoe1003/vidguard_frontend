@@ -1,4 +1,4 @@
-# A simple demo of a website
+# A simple demo of the web
 <img width="2880" height="5206" alt="image" src="https://github.com/user-attachments/assets/0d600f29-f5a7-455d-b3fc-4a91170ef141" />
 
 # Getting Started with Create React App
