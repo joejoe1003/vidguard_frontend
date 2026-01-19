@@ -1,5 +1,8 @@
 # A simple demo of the web
 <img width="2880" height="5206" alt="image" src="https://github.com/user-attachments/assets/0d600f29-f5a7-455d-b3fc-4a91170ef141" />
+<img width="1505" height="1185" alt="efa2305fc820bd5f69d47745cdb34630" src="https://github.com/user-attachments/assets/f099bcf6-647e-4e60-9d14-293ef12b6758" />
+<img width="1518" height="1231" alt="b21d3b7d81683570ede9133e669b1972" src="https://github.com/user-attachments/assets/91d9022e-b3cf-42a7-a885-3afb36719acc" />
+<img width="1519" height="780" alt="fb52fc4d8a3cbd0522435467e08e74a2" src="https://github.com/user-attachments/assets/318df9ef-c854-4c30-8c2b-eb3888e4e9f1" />
 
 # Getting Started with Create React App
 
